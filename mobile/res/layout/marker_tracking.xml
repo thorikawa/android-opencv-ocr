@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.opencv.android.JavaCameraViewEx
+        android:id="@+id/camera_view"
+        android:layout_width="@dimen/view_width"
+        android:layout_height="@dimen/view_height"
+        android:layout_centerInParent="true" />
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_view"
+        android:layout_width="@dimen/view_width"
+        android:layout_height="@dimen/view_height"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

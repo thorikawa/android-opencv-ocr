@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="view_width">1920px</dimen>
+    <dimen name="view_height">1080px</dimen>
+
+</resources>
