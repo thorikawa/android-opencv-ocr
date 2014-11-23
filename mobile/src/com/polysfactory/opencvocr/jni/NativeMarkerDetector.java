@@ -12,10 +12,9 @@ public class NativeMarkerDetector {
         mNativeObj = nativeCreateObject(nm1File, nm2File);
     }
 
-    public void findMarkers(Mat imageBgra, List<Mat> transformations, float scale) {
+    public void doOcr(Mat imageBgra, float scale) {
         Mat transformationsMat = new Mat();
         nativeFindMarkers(mNativeObj, imageBgra.nativeObj, transformationsMat.nativeObj, scale);
-        Converter.transformationsMatToList(transformationsMat, transformations);
     }
 
     public void release() {
